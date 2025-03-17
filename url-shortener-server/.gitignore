@@ -1,0 +1,99 @@
+# Ignore build output and runtime files
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.vs/
+.vs/
+*.swp
+*.swo
+
+# Ignore NuGet packages and restore files
+packages/
+*.nupkg
+.nuget/
+NuGet.exe
+NuGet.Config
+
+# Ignore local development files
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.log
+*.tmp
+
+# Ignore compiled files
+*.dll
+*.pdb
+*.exe
+*.cache
+*.ilk
+*.lib
+*.exp
+
+# Ignore Azure and deployment files
+*.azurePubxml
+*.pubxml
+*.publishsettings
+PublishProfiles/
+
+# Ignore ReSharper and Rider files
+_ReSharper.*/
+*.DotSettings.user
+
+# Ignore Visual Studio Code files
+.vscode/
+
+# Ignore Rider files
+.idea/
+
+# Ignore macOS files
+.DS_Store
+
+# Ignore Node.js and npm files
+node_modules/
+npm-debug.log
+
+# Ignore Bower and npm packages
+bower_components/
+
+# Ignore TypeScript compiled files
+*.js.map
+*.js
+*.tsbuildinfo
+
+# Ignore compiled CSS and SCSS files
+*.css
+*.min.css
+*.min.css.map
+*.scss
+*.sass
+
+# Ignore temp files
+*.tmp
+*.temp
+
+# Ignore test results
+TestResults/
+*.trx
+*.coverage
+
+# Ignore coverage reports
+coverage/
+*.lcov
+
+# Ignore dotenv files
+.env
+.env.local
+
+# Ignore Azure Functions local settings
+local.settings.json
+
+# Ignore JetBrains Rider files
+.idea/
+*.sln.iml
+
+# Ignore Visual Studio cache directory
+.vs/
