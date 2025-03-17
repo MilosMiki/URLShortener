@@ -16,3 +16,12 @@ Redirects any user (incl. unauthenticated) to the target URL. Logs this visit in
 Shows an authenticated user the URLs he shortened. Uses JWT to extract the user email, then to filter the database (by created_by). Limits visits by email to 3 times per minute (returns 429 - Too many requests, if above the limit).
 ## `/api/shorten` (POST)
 Adds a new unique entry to the shortened URLs. Requires authentication via JWT, otherwise returns 401 - Unauthorized.
+
+# Database
+
+A Postgres database created via Supabase. The table is named `url_entries`, containing fields:
+- id (text)
+- created_at (timestamp)
+- full_url (text)
+- access_count (int8)
+- created_by (text)

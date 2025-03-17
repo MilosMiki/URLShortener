@@ -112,6 +112,7 @@ public class UrlController : ControllerBase
                 return NotFound("No URL entries found.");
             }
             
+            // https://github.com/supabase-community/supabase-csharp/issues/78#issuecomment-1605684300
             var urlEntries = response.Models;  
             var mapped = urlEntries.Select(data => new Dictionary<string, object>
             {
